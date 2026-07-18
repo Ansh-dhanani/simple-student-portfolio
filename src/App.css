@@ -1,0 +1,147 @@
+.app {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  background: var(--sidebar-bg);
+  padding: 2rem 1.5rem;
+  border-right: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-section h3 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-section p {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.time {
+  font-variant-numeric: tabular-nums;
+}
+
+.main {
+  padding: 2rem;
+  max-width: 680px;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+section p {
+  margin-bottom: 0.6rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.exp-item, .project-item, .honor-item {
+  margin-bottom: 1.25rem;
+}
+
+.exp-item h3, .project-item h3, .honor-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.project-item p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+.theme-hint {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+  .app {
+    grid-template-columns: 1fr !important;
+  }
+  .sidebar {
+    position: static !important;
+    height: auto !important;
+    border-right: none !important;
+    border-bottom: 1px solid var(--border);
+  }
+}
