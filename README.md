@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Student Portfolio - Practical 3: API Integration & Data Rendering in React
 
 **Course:** ADVANCED WEB DEVELOPMENT FRAMEWORKS (ITUE301)  
@@ -65,3 +66,10 @@ Projects.jsx
 
 - **Happy Path**: Navigate to `/projects`. The spinner will display while fetching, followed by the repository list.
 - **Error Path**: Click the **"🧪 Break API URL"** toggle button on the Projects page. This simulates a broken endpoint and confirms the `<ErrorMessage />` component and retry button render as required.
+=======
+# React portfolio
+
+this is minimal portfolio for web practical 1
+
+Check out Offical [Portfolio](https://www.anshdhanani.is-a.dev/).
+>>>>>>> 0d73fa9762071ab747ef486f0baf2e52d4bb4ae0
